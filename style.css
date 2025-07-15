@@ -1,4 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -87,16 +95,28 @@ section {
     border-radius: 5px;
 }
 
+#skills {
+    text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .project {
-    margin-bottom: 1em;
-    padding: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 100%;
+    float: left;
+    display: inline;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 15px;
 }
 
 .project img {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 500px;
 }
 
 .center {
@@ -104,6 +124,23 @@ section {
 }
 
 .contact {
+    text-align: center;
+}
+
+.contact ul {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li a {
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* .contact {
     display: flex;
     position: relative;
     justify-content: center;
@@ -166,7 +203,7 @@ section {
             content: none;
         }
     }
-}
+} */
 
 footer {
     text-align: center;
