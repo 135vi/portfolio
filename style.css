@@ -1,0 +1,176 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+header ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    float: right;
+    height: 70px;
+    line-height: 70px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+header li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+header li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+header li a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background: #fff;
+    transition: all 0.5s linear;  
+}
+header li a:hover:after{
+    width: 100%;
+}
+  
+@media screen and (max-width:493px) {
+    header {
+        nav {
+            overflow: visible;
+        }
+        ul {
+            height: auto;
+            margin: 25px 25px 0 25px;
+            line-height: 50px;
+        }
+        li {
+            display: block;
+            margin: 0;
+        }
+        li:hover {
+            background: #fff;
+        }
+        li a:after {
+            content: none;
+        }
+    }
+}
+
+section {
+    padding: 2em;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.project {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.contact ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    float: right;
+    height: 70px;
+    line-height: 70px;
+}
+.contact a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.contact li a {
+    color: #333;
+    text-transform: uppercase;
+}
+.contact li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.contact li a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background: #333;
+    transition: all 0.5s linear;  
+}
+.contact li a:hover:after{
+    width: 100%;
+}
+
+@media screen and (max-width:493px) {
+    .contact {
+        nav {
+            overflow: visible;
+        }
+        ul {
+            height: auto;
+            margin: 25px 25px 0 25px;
+            line-height: 50px;
+        }
+        li {
+            display: block;
+            margin: 0;
+        }
+        li:hover {
+            background: #333;
+        }
+        li a:after {
+            content: none;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
